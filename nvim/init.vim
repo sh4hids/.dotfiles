@@ -1,16 +1,6 @@
 "-------------------- Plugin Settings -------------------- {{
-call plug#begin('~/.vim/plugged')
 
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'preservim/nerdtree'
-
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier']
-
-call plug#end()
+so ~/.config/nvim/plugins.vim
 
 "}}
 
@@ -39,13 +29,21 @@ let mapleader = ','
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
+nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
+nmap <Leader><space> :nohlsearch<cr>
+
+"}}
+
+
+"-------------------- Split Settings --------------------- {{
+
+set splitbelow
+set splitright
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
-nmap <Leader><space> :nohlsearch<cr>
 "}}
 
 
@@ -58,10 +56,11 @@ augroup END
 
 "}}
 
+
 "-------------------- NERDTree Settings ------------------ {{
 
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrowExpandable = '📁'
+let g:NERDTreeDirArrowCollapsible = '📂'
 
 "}}
 
