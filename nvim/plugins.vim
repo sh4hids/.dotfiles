@@ -17,6 +17,7 @@ Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'ryanoasis/vim-devicons'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier']
