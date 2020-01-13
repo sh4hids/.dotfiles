@@ -1,6 +1,6 @@
 "-------------------- Plugin Settings -------------------- {{
 
-so ~/.config/nvim/plugins.vim
+so ~/.dotfiles/nvim/plugins.vim
 
 "}}
 
@@ -30,7 +30,8 @@ let mapleader = ','
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
-nmap <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
+nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
+nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
 nmap <Leader><space> :nohlsearch<cr>
 
 "}}
@@ -52,7 +53,7 @@ nnoremap <C-H> <C-W><C-H>
 
 augroup autosource
   autocmd!
-  autocmd BufWritePost ~/.config/nvim/init.vim source %
+  autocmd BufWritePost ~/.dotfiles/nvim/init.vim source %
 augroup END
 
 "}}
