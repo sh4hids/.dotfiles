@@ -12,7 +12,9 @@ set background=dark
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set hlsearch
 set encoding=UTF-8
+set shell=zsh\ -i
 set guifont=FiraCode\ Nerd\ Font
+
 colorscheme palenight
 
 if (has("termguicolors"))
