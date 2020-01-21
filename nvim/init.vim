@@ -35,6 +35,7 @@ au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
 nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
 nmap <Leader><space> :nohlsearch<cr>
+nmap <C-E> :NERDTreeToggle<cr>
 
 "}}
 
