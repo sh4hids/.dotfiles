@@ -36,6 +36,7 @@ nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
 nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-E> :NERDTreeToggle<cr>
+nmap <C-/> :gcc<cr>
 
 "}}
 

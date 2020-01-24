@@ -20,6 +20,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'mhinz/vim-signify'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-commentary'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier']
 
