@@ -31,12 +31,14 @@ let mapleader = ','
 
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+autocmd BufWinEnter,WinEnter term://* startinsert
 
 nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
 nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-E> :NERDTreeToggle<cr>
-nmap <C-/> :gcc<cr>
+nmap <C-T> :botright 8split term://bash<cr>
+tnoremap <Esc> <C-\><C-n>:q!<cr>
 
 "}}
 
@@ -58,6 +60,7 @@ nnoremap <C-H> <C-W><C-H>
 augroup autosource
   autocmd!
   autocmd BufWritePost ~/.dotfiles/nvim/init.vim source %
+  autocmd TermOpen * setlocal bufhidden=hide
 augroup END
 
 "}}
