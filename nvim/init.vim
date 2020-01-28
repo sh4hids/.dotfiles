@@ -32,9 +32,11 @@ let mapleader = ','
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 autocmd BufWinEnter,WinEnter term://* startinsert
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
 nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
+nmap <Leader>ec :tabedit ~/.dotfiles/coc/coc-settings.json<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-E> :NERDTreeToggle<cr>
 nmap <C-T> :botright 8split term://bash<cr>
