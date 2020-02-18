@@ -42,6 +42,7 @@ nmap <Leader>ec :tabedit ~/.dotfiles/coc/coc-settings.json<cr>
 nmap <Leader>et :tabedit ~/.dotfiles/tmux/.tmux.conf<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>ef :NERDTreeToggle<cr>
+nmap <Leader>ey :%y+<cr>
 
 "}}
 
@@ -175,6 +176,19 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+imap <C-l> <Plug>(coc-snippets-expand)
+let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_prev = '<S-Tab>'
+let g:coc_snippet_next = '<c-j>'
+let g:coc_snippet_prev = '<c-k>'
+
 "}}
 
+
+"-------------------- UltiSnips Settings -------------------- {{
+
+let g:UltiSnipsSnippetsDir="~/.dotfiles/snips"
+let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'snips'  ]
+
+"}}
 
