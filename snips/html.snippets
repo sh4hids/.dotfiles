@@ -1,18 +1,34 @@
-snippet estyle "Add styles for electron editor" b
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      #container {
-        height: 100vh;
-        width: 100vw;
-      }
-      .monaco-editor {
-        height: 100%;
-        width: 100%;
-      }
-    </style>
+snippet eht "Description" b
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron Editor</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hello World!</h1>
+    </div>
+  </body>
+</html>
+endsnippet
 
+snippet est "Add styles for electron editor" b
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .monaco-editor {
+    height: 100%;
+    width: 100%;
+  }
+</style>
 endsnippet

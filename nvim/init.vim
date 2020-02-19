@@ -187,8 +187,7 @@ let g:coc_snippet_prev = '<c-k>'
 
 "-------------------- UltiSnips Settings -------------------- {{
 
-let g:UltiSnipsSnippetsDir="~/.dotfiles/snips"
-let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'snips'  ]
+let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
 
 "}}
 
