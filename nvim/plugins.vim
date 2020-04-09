@@ -25,6 +25,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
 
