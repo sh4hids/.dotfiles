@@ -191,3 +191,8 @@ let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
 
 "}}
 
+"-------------------- Airline Settings -------------------- {{
+
+let g:airline#extensions#clock#format = '%d/%m/%g %I:%M'
+
+"}}
