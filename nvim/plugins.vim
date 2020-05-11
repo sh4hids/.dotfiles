@@ -28,6 +28,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'hail2u/vim-css3-syntax'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
 
