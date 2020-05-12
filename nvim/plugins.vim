@@ -8,7 +8,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'drewtempelmeyer/palenight.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -29,6 +28,7 @@ Plug 'honza/vim-snippets'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'hail2u/vim-css3-syntax'
+Plug 'kaicataldo/material.vim'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
 
