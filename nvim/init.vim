@@ -15,16 +15,15 @@ set encoding=UTF-8
 set shell=zsh\ -i
 set guifont=FiraCode\ Nerd\ Font
 
-let g:material_theme_style = 'palenight'
-colorscheme material 
 
 if (has("termguicolors"))
   set termguicolors
 endif
 
-let g:airline_theme = 'material'
+let g:airline_theme = 'violet'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
+colorscheme material 
 
 "}}
 
