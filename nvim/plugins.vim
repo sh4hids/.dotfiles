@@ -29,6 +29,7 @@ Plug 'enricobacis/vim-airline-clock'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'hail2u/vim-css3-syntax'
 Plug 'kaicataldo/material.vim'
+Plug 'dense-analysis/ale'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
 
