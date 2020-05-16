@@ -106,14 +106,11 @@ unsetopt PROMPT_SP
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /home/sim/.npm/_npx/31345/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/sim/.npm/_npx/31345/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+  alias vi='nvim'
+fi
 
-# if type nvim > /dev/null 2>&1; then
-#   alias vim='nvim'
-#   alias vi='nvim'
-# fi
 source /home/sim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export DENO_INSTALL="/home/sim/.local"
