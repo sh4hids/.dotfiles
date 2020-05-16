@@ -23,6 +23,7 @@ endif
 let g:airline_theme = 'violet'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
+
 colorscheme material 
 
 "}}
@@ -195,5 +196,18 @@ let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
 "-------------------- Airline Settings -------------------- {{
 
 let g:airline#extensions#clock#format = '%d/%m/%g %I:%M'
+
+"}}
+
+"-------------------- ALE Settings -------------------- {{
+
+let g:ale_fixers = {
+ \ 'javascript': ['eslint']
+ \ }
+ 
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+
+let g:ale_fix_on_save = 1
 
 "}}
