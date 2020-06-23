@@ -15,7 +15,6 @@ set encoding=UTF-8
 set shell=zsh\ -i
 set guifont=FiraCode\ Nerd\ Font
 
-
 if (has("termguicolors"))
   set termguicolors
 endif
@@ -27,6 +26,9 @@ let mapleader = ','
 
 colorscheme material
 
+highlight Normal guibg=none
+highlight NonText guibg=none
+
 "}}
 
 
@@ -34,6 +36,7 @@ colorscheme material
 
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd BufWrite * mkview
