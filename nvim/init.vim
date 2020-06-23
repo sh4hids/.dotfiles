@@ -20,11 +20,12 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-let g:airline_theme = 'violet'
+let g:material_theme_style = 'palenight' 
+let g:airline_theme = 'material'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
 
-colorscheme material 
+colorscheme material
 
 "}}
 

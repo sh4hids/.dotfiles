@@ -118,3 +118,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH="$HOME/go_projects"
 export GOBIN="$GOPATH/bin"
+export QT_SCREEN_SCALE_FACTORS=1
+echo -e "\033]32;\007"
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
