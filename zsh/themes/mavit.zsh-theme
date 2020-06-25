@@ -59,8 +59,8 @@ MODE_INDICATOR="%{$fg_bold[yellow]%}❮%{$reset_color%}%{$fg[yellow]%}❮❮%{$r
 # Git prompt settings
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}✓%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}🔥%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}💯%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%}✚ "
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%}⚑ "
 ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}⚡ "
