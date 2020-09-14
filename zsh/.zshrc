@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-source ~/.bash_profile
-
 # Path to your oh-my-zsh installation.
   export ZSH="/home/sim/.oh-my-zsh"
 
@@ -67,6 +65,7 @@ ZSH_THEME="mavit"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,8 +109,6 @@ if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
   alias vi='nvim'
 fi
-
-source /home/sim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export DENO_INSTALL="/home/sim/.local"
 export PATH="$DENO_INSTALL/bin:$PATH"
