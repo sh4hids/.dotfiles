@@ -121,3 +121,4 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source "$HOME/.gvm/scripts/gvm"
