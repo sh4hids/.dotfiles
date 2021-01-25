@@ -1,0 +1,13 @@
+# git
+
+alias gpd='git pull origin develop'
+
+
+# atom
+
+alias a='atom .'
+
+
+# others
+
+alias c='clear'
