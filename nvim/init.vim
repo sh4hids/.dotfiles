@@ -20,11 +20,13 @@ if (has("termguicolors"))
 endif
 
 let g:material_theme_style = 'palenight' 
-let g:airline_theme = 'material'
+" let g:airline_theme = 'dogrun'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
 
-colorscheme material
+" colorscheme material
+
+colorscheme dogrun 
 
 highlight Normal guibg=none
 highlight NonText guibg=none

@@ -29,6 +29,7 @@ Plug 'enricobacis/vim-airline-clock'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'hail2u/vim-css3-syntax'
 Plug 'kaicataldo/material.vim'
+Plug 'wadackel/vim-dogrun'
 Plug 'dense-analysis/ale'
 Plug 'pacha/vem-tabline'
 
