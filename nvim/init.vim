@@ -14,22 +14,31 @@ set hlsearch
 set encoding=UTF-8
 set shell=zsh\ -i
 set guifont=FiraCode\ Nerd\ Font
+set textwidth=80
 
 if (has("termguicolors"))
   set termguicolors
 endif
 
-let g:material_theme_style = 'palenight' 
+" let g:material_theme_style = 'palenight' 
 " let g:airline_theme = 'dogrun'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
 
 " colorscheme material
-
-colorscheme dogrun 
+" colorscheme dogrun 
+colorscheme nightfly 
 
 highlight Normal guibg=none
 highlight NonText guibg=none
+
+set number relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 "}}
 

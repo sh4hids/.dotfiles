@@ -32,6 +32,7 @@ Plug 'kaicataldo/material.vim'
 Plug 'wadackel/vim-dogrun'
 Plug 'dense-analysis/ale'
 Plug 'pacha/vem-tabline'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
 
