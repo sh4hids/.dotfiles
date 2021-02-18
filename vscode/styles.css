@@ -1,0 +1,54 @@
+.mtk3 {
+  font-family: "Script12 BT";
+  font-size: 1.44rem;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  > .tabs-and-actions-container {
+  width: 90%;
+}
+
+.split-view-view.visible:nth-child(1) {
+  width: 100%;
+}
+
+.split-view-view.visible:nth-child(2) {
+  top: 0 !important;
+  background-color: #1c1e26;
+}
+
+.split-view-container:first-child
+  > .split-view-view.visible:nth-child(3)
+  > .part.statusbar {
+  margin-top: -16px;
+}
+
+.window-appicon,
+.window-title {
+  display: none;
+}
+
+.monaco-workbench.linux .part.titlebar,
+.monaco-workbench.web .part.titlebar,
+.monaco-workbench.windows .part.titlebar {
+  height: auto !important;
+}
+
+.monaco-workbench .part.titlebar > .window-controls-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+}
+
+.monaco-workbench .part.titlebar > .titlebar-drag-region {
+  width: auto;
+}
+
+.split-view-view.visible {
+  height: 100% !important;
+}

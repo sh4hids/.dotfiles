@@ -9,27 +9,3 @@ endsnippet
 snippet cld "console.log(...)" b
 console.log("---------->");
 endsnippet
-
-snippet eli "Init electron project" b
-const { app, BrowserWindow } = require('electron');
-
-let mainWindow;
-
-app.on('ready', () => {
-  mainWindow = new BrowserWindow({
-    webPreferences: {
-      nodeIntegration: true,
-    },
-  });
-
-  mainWindow.loadFile('app.html');
-});
-endsnippet
-
-snippet eld "Load electron editor" b
-const loader = require("monaco-loader");
-
-loader().then(monaco => {
-
-});
-endsnippet

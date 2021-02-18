@@ -128,3 +128,4 @@ alias project='cd /media/sim/Store/DevHouse/projects/'
 alias gpd='git pull origin develop'
 alias c='clear'
 alias a='atom .'
+source ~/.dotfiles/zsh/.aliases
