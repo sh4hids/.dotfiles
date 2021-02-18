@@ -108,6 +108,7 @@ export NVM_DIR="$HOME/.nvm"
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
   alias vi='nvim'
+  alias v='nvim'
 fi
 
 export DENO_INSTALL="/home/sim/.local"
@@ -122,3 +123,8 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source "$HOME/.gvm/scripts/gvm"
+
+alias project='cd /media/sim/Store/DevHouse/projects/'
+alias gpd='git pull origin develop'
+alias c='clear'
+alias a='atom .'
