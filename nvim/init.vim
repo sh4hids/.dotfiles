@@ -89,14 +89,20 @@ augroup END
 
 "-------------------- NERDTree Settings ------------------ {{
 
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,.git,node_modules
 let g:NERDTreeWinSize = 24
+let NERDTreeShowHidden=1
+let NERDTreeRespectWildIgnore=1
+let g:NERDTreeDirArrowExpandable = '▶'
+let g:NERDTreeDirArrowCollapsible = '▼'
 
 "}}
 
 
 "-------------------- Pretieer Settings ------------------- {{
 
-let g:prettier#autoformat = 0
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 "}}
