@@ -111,6 +111,7 @@ if type nvim > /dev/null 2>&1; then
   alias v='nvim'
 fi
 
+export BAT_THEME="OneHalfDark"
 export DENO_INSTALL="/home/sim/.local"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin

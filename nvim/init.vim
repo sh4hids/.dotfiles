@@ -20,13 +20,9 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" let g:material_theme_style = 'palenight' 
-" let g:airline_theme = 'dogrun'
 let g:airline_powerline_fonts = 1
 let mapleader = ','
 
-" colorscheme material
-" colorscheme dogrun 
 colorscheme nightfly 
 
 highlight Normal guibg=none
@@ -101,9 +97,9 @@ let g:NERDTreeDirArrowCollapsible = '▼'
 
 "-------------------- Pretieer Settings ------------------- {{
 
-let g:prettier#autoformat_config_present = 1
-let g:prettier#autoformat_require_pragma = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+" let g:prettier#autoformat_config_present = 1
+" let g:prettier#autoformat_require_pragma = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 "}}
 
@@ -137,7 +133,8 @@ endfunction
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -177,9 +174,23 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
 omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+
+
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif
 
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
@@ -199,18 +210,12 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-imap <C-l> <Plug>(coc-snippets-expand)
-let g:coc_snippet_next = '<Tab>'
-let g:coc_snippet_prev = '<S-Tab>'
-let g:coc_snippet_next = '<c-j>'
-let g:coc_snippet_prev = '<c-k>'
-
 "}}
 
 
 "-------------------- UltiSnips Settings -------------------- {{
 
-let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
+" let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
 
 "}}
 
@@ -222,13 +227,13 @@ let g:airline#extensions#clock#format = '%d/%m/%g %I:%M'
 
 "-------------------- ALE Settings -------------------- {{
 
-let g:ale_fixers = {
- \ 'javascript': ['eslint']
- \ }
+" let g:ale_fixers = {
+"  \ 'javascript': ['eslint']
+"  \ }
  
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+" let g:ale_sign_error = '❌'
+" let g:ale_sign_warning = '⚠️'
 
-let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 1
 
 "}}

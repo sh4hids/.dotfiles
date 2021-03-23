@@ -14,27 +14,24 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-vinegar'
+" Plug 'tpope/vim-vinegar'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+" Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'mhinz/vim-signify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'sheerun/vim-polyglot'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 Plug 'enricobacis/vim-airline-clock'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'hail2u/vim-css3-syntax'
-Plug 'kaicataldo/material.vim'
-Plug 'wadackel/vim-dogrun'
-Plug 'dense-analysis/ale'
+" Plug 'hail2u/vim-css3-syntax'
+" Plug 'dense-analysis/ale'
 Plug 'pacha/vem-tabline'
 Plug 'bluz71/vim-nightfly-guicolors'
 
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets', 'coc-css', 'coc-html', 'coc-yaml']
 
 call plug#end()
 
