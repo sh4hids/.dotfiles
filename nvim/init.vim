@@ -94,16 +94,6 @@ let g:NERDTreeDirArrowCollapsible = '▼'
 
 "}}
 
-
-"-------------------- Pretieer Settings ------------------- {{
-
-" let g:prettier#autoformat_config_present = 1
-" let g:prettier#autoformat_require_pragma = 0
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-"}}
-
-
 "-------------------- CtrlP Settings ---------------------- {{
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
@@ -212,28 +202,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 "}}
 
-
-"-------------------- UltiSnips Settings -------------------- {{
-
-" let g:UltiSnipsSnippetDirectories=["~/.dotfiles/snips", "UltiSnips"]
-
-"}}
-
 "-------------------- Airline Settings -------------------- {{
 
 let g:airline#extensions#clock#format = '%d/%m/%g %I:%M'
-
-"}}
-
-"-------------------- ALE Settings -------------------- {{
-
-" let g:ale_fixers = {
-"  \ 'javascript': ['eslint']
-"  \ }
- 
-" let g:ale_sign_error = '❌'
-" let g:ale_sign_warning = '⚠️'
-
-" let g:ale_fix_on_save = 1
 
 "}}
