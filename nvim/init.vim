@@ -207,3 +207,12 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 let g:airline#extensions#clock#format = '%d/%m/%g %I:%M'
 
 "}}
+
+"-------------------- Disable Keys -------------------- {{
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+"}}

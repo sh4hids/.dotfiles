@@ -3,11 +3,23 @@
 alias gpd='git pull origin develop'
 
 
-# atom
+# editor
 
-alias a='atom .'
+if type atom > /dev/null 2>&1; then
+  alias a='atom'
+fi
+
+if type code > /dev/null 2>&1; then
+  alias c='code'
+fi
+
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+  alias vi='nvim'
+  alias v='nvim'
+fi
 
 
 # others
 
-alias c='clear'
+alias cl='clear'
