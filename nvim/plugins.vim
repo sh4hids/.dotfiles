@@ -22,6 +22,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'pacha/vem-tabline'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-emmet', 'coc-eslint', 'coc-prettier', 'coc-snippets', 'coc-css', 'coc-html', 'coc-yaml']
 
