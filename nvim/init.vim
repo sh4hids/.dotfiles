@@ -51,6 +51,7 @@ autocmd BufRead * silent loadview
 
 nmap <Leader>ev :tabedit ~/.dotfiles/nvim/init.vim<cr>
 nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
+nmap <Leader>elp :tabedit ~/.dotfiles/nvim/lua/plugins.lua<cr>
 nmap <Leader>ec :tabedit ~/.dotfiles/coc/coc-settings.json<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>ef :NERDTreeToggle<cr>
@@ -148,5 +149,11 @@ let g:completion_chain_complete_list = {
         \   'comment': []
         \   }
         \}
+
+
+nnoremap <silent> ff <cmd>Telescope find_files<cr>
+nnoremap <silent> fr <cmd>Telescope live_grep<cr>
+nnoremap <silent> fb <cmd>Telescope buffers<cr>
+nnoremap <silent> fh <cmd>Telescope help_tags<cr>
 
 "}}
