@@ -18,7 +18,6 @@ Plug 'tpope/vim-commentary'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'pacha/vem-tabline'
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'windwp/nvim-autopairs'
 
 if has("nvim")
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -30,6 +29,7 @@ if has("nvim")
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'folke/lsp-colors.nvim'
+  Plug 'windwp/nvim-autopairs'
 endif
 
 call plug#end()
