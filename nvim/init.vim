@@ -9,7 +9,7 @@ so ~/.dotfiles/nvim/plugins.vim
 
 set nu
 set background=dark
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set hlsearch
 set encoding=UTF-8
 set shell=zsh\ -i
@@ -155,5 +155,6 @@ nnoremap <silent> ff <cmd>Telescope find_files<cr>
 nnoremap <silent> fr <cmd>Telescope live_grep<cr>
 nnoremap <silent> fb <cmd>Telescope buffers<cr>
 nnoremap <silent> fh <cmd>Telescope help_tags<cr>
+
 
 "}}
