@@ -16,7 +16,6 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 Plug 'enricobacis/vim-airline-clock'
-Plug 'pacha/vem-tabline'
 Plug 'bluz71/vim-nightfly-guicolors'
 
 if has("nvim")
@@ -30,6 +29,7 @@ if has("nvim")
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'folke/lsp-colors.nvim'
   Plug 'windwp/nvim-autopairs'
+  Plug 'akinsho/bufferline.nvim'
 endif
 
 call plug#end()

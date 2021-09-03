@@ -84,3 +84,9 @@ autopairs.setup({
   disable_filetype = { "TelescopePrompt" , "vim" },
 })
 
+--
+-- setup bufferline
+--
+
+require("bufferline").setup{}
+
