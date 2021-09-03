@@ -30,6 +30,7 @@ if has("nvim")
   Plug 'folke/lsp-colors.nvim'
   Plug 'windwp/nvim-autopairs'
   Plug 'akinsho/bufferline.nvim'
+  Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 
 call plug#end()

@@ -90,3 +90,12 @@ autopairs.setup({
 
 require("bufferline").setup{}
 
+
+--
+-- setup indentline
+--
+
+require("indent_blankline").setup {
+    char = "|",
+    buftype_exclude = {"terminal"}
+}
