@@ -8,7 +8,7 @@ require'lualine'.setup {
     icons_enabled = true,
     theme = 'nightfly',
     component_separators = {'|', '|'},
-    section_separators = {'', ''},
+    section_separators = {'▒', '▒'},
     disabled_filetypes = {}
   },
   sections = {
