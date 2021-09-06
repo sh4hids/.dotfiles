@@ -1,13 +1,13 @@
 local function clock()
   local time = os.time();
-  return os.date('%H:%M', time);
+  return os.date('%I:%M %p', time);
 end
 
 require'lualine'.setup {
   options = {
     icons_enabled = true,
     theme = 'nightfly',
-    component_separators = {'|', '|'},
+    component_separators = {'┊', '┊'},
     section_separators = {'▒', '▒'},
     disabled_filetypes = {}
   },
