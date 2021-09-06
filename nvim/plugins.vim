@@ -13,7 +13,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'preservim/nerdtree'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'bluz71/vim-nightfly-guicolors'
@@ -31,6 +31,7 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   Plug 'akinsho/bufferline.nvim'
   Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
 endif
 
 call plug#end()

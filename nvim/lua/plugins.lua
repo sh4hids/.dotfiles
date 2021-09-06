@@ -99,3 +99,12 @@ require("indent_blankline").setup {
     char = "|",
     buftype_exclude = {"terminal"}
 }
+
+
+--
+-- setup gitsign
+--
+
+require('gitsigns').setup {
+  current_line_blame = true
+}
