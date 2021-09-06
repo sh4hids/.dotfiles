@@ -28,6 +28,7 @@ if has("nvim")
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'hoob3rt/lualine.nvim'
+  Plug 'kyazdani42/nvim-tree.lua'
 endif
 
 call plug#end()

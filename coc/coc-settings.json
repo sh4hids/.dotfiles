@@ -1,7 +1,0 @@
-{
-  "javascript.suggestionActions.enabled": false,
-  "typescript.suggestionActions.enabled": false,
-  "javascript.validate.enable": false,
-  "typescript.validate.enable": false,
-  "coc.preferences.jumpCommand": "drop"
-}
