@@ -10,6 +10,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require('lsp')
+require('mylualine')
 
 --
 -- setup autocomplete

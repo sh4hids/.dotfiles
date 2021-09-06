@@ -8,14 +8,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'preservim/nerdtree'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-" Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
-Plug 'enricobacis/vim-airline-clock'
 Plug 'bluz71/vim-nightfly-guicolors'
 
 if has("nvim")
@@ -32,6 +27,7 @@ if has("nvim")
   Plug 'akinsho/bufferline.nvim'
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'lewis6991/gitsigns.nvim'
+  Plug 'hoob3rt/lualine.nvim'
 endif
 
 call plug#end()

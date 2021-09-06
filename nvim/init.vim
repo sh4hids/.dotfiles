@@ -54,7 +54,6 @@ nmap <Leader>ep :tabedit ~/.dotfiles/nvim/plugins.vim<cr>
 nmap <Leader>elp :tabedit ~/.dotfiles/nvim/lua/plugins.lua<cr>
 nmap <Leader>ec :tabedit ~/.dotfiles/coc/coc-settings.json<cr>
 nmap <Leader><space> :nohlsearch<cr>
-nmap <Leader>ef :NERDTreeToggle<cr>
 nmap <Leader>ey :%y+<cr>
 
 "}}
@@ -82,17 +81,6 @@ augroup END
 
 "}}
 
-
-"-------------------- NERDTree Settings ------------------ {{
-
-set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,.git,node_modules
-let g:NERDTreeWinSize = 24
-let NERDTreeShowHidden=1
-let NERDTreeRespectWildIgnore=1
-let g:NERDTreeDirArrowExpandable = '▶'
-let g:NERDTreeDirArrowCollapsible = '▼'
-
-"}}
 
 "-------------------- CtrlP Settings ---------------------- {{
 
