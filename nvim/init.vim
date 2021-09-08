@@ -13,7 +13,7 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 set hlsearch
 set encoding=UTF-8
 set shell=zsh\ -i
-set guifont=FiraCode\ Nerd\ Font
+set guifont=FiraCode\ Nerd\ Font\ Mono
 set textwidth=80
 
 if (has("termguicolors"))
