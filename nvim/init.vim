@@ -119,6 +119,7 @@ noremap <Right> <Nop>
 
 lua << EOF
 
+require('impatient')
 require('plugins')
 
 EOF

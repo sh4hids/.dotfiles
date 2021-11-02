@@ -30,6 +30,7 @@ if has("nvim")
   Plug 'hoob3rt/lualine.nvim'
   Plug 'L3MON4D3/LuaSnip'
   Plug 'preservim/nerdtree'
+  Plug 'lewis6991/impatient.nvim' 
 endif
 
 call plug#end()
