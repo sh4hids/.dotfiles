@@ -86,6 +86,41 @@ augroup END
 "-------------------- CtrlP Settings ---------------------- {{
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:dashboard_default_executive ='telescope'
+let g:indentLine_fileTypeExclude = ['dashboard']
+nmap <Leader>ss :<C-u>SessionSave<CR>
+nmap <Leader>sl :<C-u>SessionLoad<CR>
+nnoremap <silent> <Leader>fh :DashboardFindHistory<CR>
+nnoremap <silent> <Leader>ff :DashboardFindFile<CR>
+nnoremap <silent> <Leader>tc :DashboardChangeColorscheme<CR>
+nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
+nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
+nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
+
+let g:dashboard_custom_header = [
+\'',
+\'',
+\'',
+\'',
+\'',
+\'',
+\ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+\ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+\ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+\ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+\ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+\ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+\]
+
+let g:dashboard_custom_shortcut={
+\ 'last_session'       : 'LEADER s l',
+\ 'find_history'       : 'LEADER f h',
+\ 'find_file'          : 'LEADER f f',
+\ 'new_file'           : 'LEADER c n',
+\ 'change_colorscheme' : 'LEADER t c',
+\ 'find_word'          : 'LEADER f a',
+\ 'book_marks'         : 'LEADER f b',
+\ }
 
 "}}
 
