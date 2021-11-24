@@ -31,6 +31,7 @@ if has("nvim")
   Plug 'L3MON4D3/LuaSnip'
   Plug 'preservim/nerdtree'
   Plug 'lewis6991/impatient.nvim' 
+Plug 'glepnir/dashboard-nvim'
 endif
 
 call plug#end()
