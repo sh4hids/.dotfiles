@@ -126,8 +126,8 @@ set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,.git
 let g:NERDTreeWinSize = 24
 let NERDTreeShowHidden=1
 let NERDTreeRespectWildIgnore=1
-let g:NERDTreeDirArrowExpandable = '▶'
-let g:NERDTreeDirArrowCollapsible = '▼'
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 "}}
 
