@@ -32,6 +32,7 @@ if has("nvim")
   Plug 'preservim/nerdtree'
   Plug 'lewis6991/impatient.nvim' 
   Plug 'glepnir/dashboard-nvim'
+  " Plug 'EdenEast/nightfox.nvim'
 endif
 
 call plug#end()
