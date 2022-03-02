@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Lazy load zsh-nvm
+export NVM_LAZY_LOAD=true
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -20,6 +23,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -49,3 +53,5 @@ source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-sy
 source "$HOME/.gvm/scripts/gvm"
 
 source ~/.dotfiles/zsh/.aliases
+alias amag="cd /media/sim/Store/AMAG"
+alias dev="cd /media/sim/Store/DevHouse"
