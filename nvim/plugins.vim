@@ -33,7 +33,7 @@ if has("nvim")
   Plug 'lewis6991/impatient.nvim' 
   Plug 'glepnir/dashboard-nvim'
   Plug 'ryanoasis/vim-devicons'
-  " Plug 'EdenEast/nightfox.nvim'
+  " Plug 'huyvohcmc/atlas.vim'
 endif
 
 call plug#end()
