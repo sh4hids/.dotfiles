@@ -17,7 +17,7 @@ if has("nvim")
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
-  Plug 'nvim-lua/completion-nvim'
+  " Plug 'nvim-lua/completion-nvim'
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
@@ -33,6 +33,10 @@ if has("nvim")
   Plug 'lewis6991/impatient.nvim' 
   Plug 'glepnir/dashboard-nvim'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'onsails/lspkind-nvim'
   " Plug 'huyvohcmc/atlas.vim'
 endif
 
