@@ -56,5 +56,7 @@ return require('packer').startup(function()
         'kyazdani42/nvim-web-devicons',
       }
   }
+  use 'folke/tokyonight.nvim'
+  use 'EdenEast/nightfox.nvim'
 
 end)

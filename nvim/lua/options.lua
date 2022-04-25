@@ -16,3 +16,6 @@ vim.o.splitright = true
 vim.o.termguicolors = true
 
 vim.o.completeopt='menuone,noinsert,noselect'
+
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")

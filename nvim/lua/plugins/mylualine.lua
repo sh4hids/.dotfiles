@@ -6,7 +6,7 @@ end
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'nightfly',
+    -- theme = 'nightfly',
     component_separators = {'┊', '┊'},
     section_separators = {'▒', '▒'},
     disabled_filetypes = {}

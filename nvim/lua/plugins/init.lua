@@ -1,6 +1,7 @@
 require 'plugins/install'
 require 'plugins/plugins'
 require 'plugins/dashboard'
+require 'plugins/indentline'
 require 'plugins/lsp-installer'
 require 'plugins/cmp'
 require 'plugins/autopairs'

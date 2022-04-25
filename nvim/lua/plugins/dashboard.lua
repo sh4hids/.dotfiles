@@ -1,7 +1,6 @@
 local plugins_count = vim.fn.len(vim.fn.globpath("~/.local/share/nvim/site/pack/packer/start", "*", 0, 1))
 vim.g.dashboard_disable_statusline = 1
 vim.g.dashboard_default_executive ='telescope'
-vim.g.indentLine_fileTypeExclude = {'dashboard'}
 
 local alien = {
 

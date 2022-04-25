@@ -11,6 +11,6 @@ require 'options'
 
 
 require 'impatient'
+require 'colors'
 require 'plugins'
 require 'keymaps'
-require 'colors'
