@@ -13,6 +13,12 @@ require "cmp_buffer"
         require('luasnip').lsp_expand(args.body)
       end,
     },
+    window = {
+      documentation = {
+        border = 'rounded',
+	winhighlight = 'NormalFloat:NormalFloat,FloatBorder:FloatBorder',
+      },
+    },
     mapping = {
       ['<C-d>'] = cmp.mapping.scroll_docs(-4),
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -30,7 +36,7 @@ require "cmp_buffer"
     }),
     formatting = {
       format = lspkind.cmp_format({with_text = false, maxwidth = 50})
-    }
+    },
   })
 
   vim.cmd [[highlight! default link CmpItemKind CmpItemMenuDefault]]
