@@ -39,7 +39,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'lewis6991/gitsigns.nvim'
   use 'hoob3rt/lualine.nvim'
-  use 'L3MON4D3/LuaSnip'
+  use { 'L3MON4D3/LuaSnip', after = 'nvim-cmp' }
   use 'saadparwaiz1/cmp_luasnip'
   use 'lewis6991/impatient.nvim' 
   use 'glepnir/dashboard-nvim'
@@ -58,5 +58,6 @@ return require('packer').startup(function()
   }
   use 'folke/tokyonight.nvim'
   use 'EdenEast/nightfox.nvim'
+  use "rafamadriz/friendly-snippets"
 
 end)
