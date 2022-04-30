@@ -59,5 +59,6 @@ return require('packer').startup(function()
   use 'folke/tokyonight.nvim'
   use 'EdenEast/nightfox.nvim'
   use "rafamadriz/friendly-snippets"
+  use 'ray-x/go.nvim'
 
 end)

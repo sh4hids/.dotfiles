@@ -10,7 +10,8 @@ keymap('n', '<a-j>', '<c-w>j', keymapOptions)
 keymap('n', '<a-k>', '<c-w>k', keymapOptions)
 keymap('n', '<a-l>', '<C-w>l', keymapOptions)
 
-keymapOptions = {}
+-- keymapOptions = {}
+keymapOptions = { noremap = true, silent = true }
 
 keymap('n', '<Leader>ef', [[:NvimTreeToggle<cr>]], keymapOptions)
 keymap('n', '<Leader>ec', [[:tabedit ~/.dotfiles/nvim/init.lua<cr>]], keymapOptions)

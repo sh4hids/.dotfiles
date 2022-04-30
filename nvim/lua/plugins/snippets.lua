@@ -1,4 +1,5 @@
 local ls = require "luasnip"
+require("luasnip.loaders.from_vscode").lazy_load()
 -- some shorthands...
 local snip = ls.snippet
 local node = ls.snippet_node
