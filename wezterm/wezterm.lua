@@ -9,7 +9,7 @@ return {
   color_scheme = "MaterialOcean",
   font_size = 20,
   window_background_opacity = 0.9,
-  text_background_opacity = 0.0,
+  text_background_opacity = 0.2,
   startingDirectory = ".",
   window_frame = {
     inactive_titlebar_bg = "#121621",
