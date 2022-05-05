@@ -1,5 +1,6 @@
 require 'plugins/install'
 require 'plugins/plugins'
+require 'plugins/telescope-conf'
 require 'plugins/dashboard'
 require 'plugins/indentline'
 require 'plugins/lsp-installer'
