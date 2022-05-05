@@ -1,5 +1,11 @@
--- local status, cmp = pcall(require, "cmp")
--- if (not status) then return end
+local status, cmp = pcall(require, "cmp")
+if (not status) then return end
+
+local status, ls = pcall(require, "luasnip")
+if (not status) then return end
+
+local status, lsk = pcall(require, "lspkind")
+if (not status) then return end
 
 local cmp = require'cmp'
 local lspkind = require'lspkind'

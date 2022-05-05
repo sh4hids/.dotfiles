@@ -1,3 +1,6 @@
+local status, lspkind = pcall(require, "lualine")
+if (not status) then return end
+
 local function clock()
   local time = os.time();
   return os.date('%I:%M %p', time);

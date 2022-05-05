@@ -1,3 +1,6 @@
+local status, nullls = pcall(require, "null-ls")
+if (not status) then return end
+
 local null_ls = require("null-ls")
 
 local buf_map = function(bufnr, mode, lhs, rhs, opts)

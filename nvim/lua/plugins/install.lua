@@ -41,7 +41,6 @@ return require('packer').startup(function()
   use 'hoob3rt/lualine.nvim'
   use { 'L3MON4D3/LuaSnip', after = 'nvim-cmp' }
   use 'saadparwaiz1/cmp_luasnip'
-  use 'lewis6991/impatient.nvim' 
   use 'glepnir/dashboard-nvim'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

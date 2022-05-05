@@ -1,4 +1,4 @@
-local status, indent_blankline = pcall(require, "indent_blankline")
+local status, line = pcall(require, "indent_blankline")
 if (not status) then return end
 
 require("indent_blankline").setup {

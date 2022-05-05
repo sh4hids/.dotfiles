@@ -4,13 +4,11 @@
 
 require 'globals'
 require 'options'
+require 'keymaps'
 
 --
 -- Buffer Options
 --
 
-
-require 'impatient'
 require 'colors'
 require 'plugins'
-require 'keymaps'

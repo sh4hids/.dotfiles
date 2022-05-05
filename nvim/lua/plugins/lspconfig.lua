@@ -1,3 +1,6 @@
+local status, lsconf = pcall(require, "lspconfig")
+if (not status) then return end
+
 local lspconfig = require("lspconfig")
 
 local buf_map = function(bufnr, mode, lhs, rhs, opts)
