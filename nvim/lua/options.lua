@@ -7,7 +7,6 @@ vim.o.relativenumber = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.termguicolors = true
-vim.o.completeopt='menuone,noinsert,noselect'
 
 vim.opt.list = true
 vim.opt.tabstop = 2

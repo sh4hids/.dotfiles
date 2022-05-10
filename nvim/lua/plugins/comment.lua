@@ -1,4 +1,7 @@
-local status, cmnt = pcall(require, "Comment")
-if (not status) then return end
+local status, _ = pcall(require, 'Comment')
+if not status then
+  print('plugins/comment :: comment not loaded')
+  return
+end
 
-require('Comment').setup()
+require('Comment').setup({})

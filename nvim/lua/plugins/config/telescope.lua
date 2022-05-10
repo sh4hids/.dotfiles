@@ -1,5 +1,9 @@
 local status, t = pcall(require, "telescope")
-if (not status) then return end
+
+if (not status) then
+  print("plugins/config/telescope :: telescope not loaded")
+  return
+end
 
 local actions = require('telescope.actions')
 

@@ -39,12 +39,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'lewis6991/gitsigns.nvim'
   use 'hoob3rt/lualine.nvim'
-  use { 'L3MON4D3/LuaSnip', after = 'nvim-cmp' }
-  use 'saadparwaiz1/cmp_luasnip'
   use 'glepnir/dashboard-nvim'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/nvim-cmp'
   use 'onsails/lspkind-nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'jose-elias-alvarez/nvim-lsp-ts-utils'
@@ -57,7 +52,19 @@ return require('packer').startup(function()
   }
   use 'folke/tokyonight.nvim'
   use 'EdenEast/nightfox.nvim'
-  use "rafamadriz/friendly-snippets"
   use 'ray-x/go.nvim'
+
+  -- Autocompletion & LuaSnip {{
+
+  use "rafamadriz/friendly-snippets"
+  use "hrsh7th/nvim-cmp"
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+
+  -- }}
 
 end)

@@ -58,3 +58,6 @@ alias p="cd /media/sim/Store/DevHouse/projects"
 
 export GOPATH="$HOME/.gvm/pkgsets/go1.15.2/global"; export GOROOT="$HOME/.gvm/gos/go1.15.2"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
 alias gvm="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
+alias luamake=/home/sim/tools/lua-language-server/3rd/luamake/luamake
+export PATH="$HOME/tools/lua-language-server/bin/Linux:$PATH"

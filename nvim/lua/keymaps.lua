@@ -17,6 +17,7 @@ keymap('n', '<Leader>ef', [[:NvimTreeToggle<cr>]], keymapOptions)
 keymap('n', '<Leader>ec', [[:tabedit ~/.dotfiles/nvim/init.lua<cr>]], keymapOptions)
 keymap('n', '<Leader>ep', [[:tabedit ~/.dotfiles/nvim/lua/plugins/install.lua<cr>]], keymapOptions)
 keymap('n', '<Leader>sc', [[:luafile ~/.dotfiles/nvim/init.lua<cr>]], keymapOptions)
+keymap('n', '<Leader><space>', [[:nohlsearch<cr>]], keymapOptions)
 
 -- Better File Saving
 
@@ -34,5 +35,5 @@ keymap('n', 'fh', ':Telescope help_tags<CR>', keymapOptions)
 
 keymapOptions = { silent = true }
 
-keymap("x", "J", ":move '>+1<CR>gv-gv", keymapOptions)
-keymap("x", "K", ":move '<-2<CR>gv-gv", keymapOptions)
+keymap('x', 'J', ":move '>+1<CR>gv-gv", keymapOptions)
+keymap('x', 'K', ":move '<-2<CR>gv-gv", keymapOptions)
