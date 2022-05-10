@@ -5,8 +5,14 @@ return {
     "Fantasque Sans Mono",
     "FiraCode Nerd Font Mono",
   }),
+  use_fancy_tab_bar = false,
   color_scheme = "MaterialOcean",
   font_size = 20,
-  text_background_opacity = 0.3,
-  window_background_image = "/home/sim/.dotfiles/wezterm/term-bg.png",
+  window_background_opacity = 0.9,
+  text_background_opacity = 0.2,
+  startingDirectory = ".",
+  window_frame = {
+    inactive_titlebar_bg = "#121621",
+    active_titlebar_bg = "#121621"
+  }
 }
