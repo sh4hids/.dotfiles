@@ -27,6 +27,7 @@ return require('packer').startup(function()
   use('wbthomason/packer.nvim')
   use('bluz71/vim-nightfly-guicolors')
   use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+  use('nvim-treesitter/playground')
   use('neovim/nvim-lspconfig')
   use('williamboman/nvim-lsp-installer')
   use('nvim-lua/popup.nvim')
@@ -68,6 +69,8 @@ return require('packer').startup(function()
     'rrethy/vim-hexokinase',
     run = 'cd ~/.local/share/nvim/site/pack/packer/start/vim-hexokinase && make hexokinase',
   })
+
+  use('sh4hids/color-wheel.vim')
 
   -- }}
 end)

@@ -60,3 +60,4 @@ alias gvm="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stef
 
 alias luamake=/home/sim/tools/lua-language-server/3rd/luamake/luamake
 export PATH="$HOME/tools/lua-language-server/bin/Linux:$PATH"
+export GPG_TTY=$(tty)
