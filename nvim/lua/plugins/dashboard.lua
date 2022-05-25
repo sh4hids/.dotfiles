@@ -3,9 +3,7 @@ vim.g.dashboard_disable_statusline = 1
 vim.g.dashboard_default_executive = 'telescope'
 
 local logo = {
-
-  '',
-  '',
+  [[]],
   [[███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
   [[████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
   [[██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
@@ -25,6 +23,5 @@ vim.g.dashboard_custom_section = {
 }
 
 vim.g.dashboard_custom_footer = {
-  '   ',
   'NeoVim Loaded ' .. plugins_count .. ' plugins ',
 }

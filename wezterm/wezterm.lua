@@ -26,13 +26,13 @@ end
 return {
   font = font,
   use_fancy_tab_bar = false,
-  color_scheme = 'MaterialOcean',
+  color_scheme = 'horizon',
   font_size = 20,
   window_background_opacity = 0.9,
-  text_background_opacity = 0.2,
+  text_background_opacity = 0.3,
   startingDirectory = '.',
   window_frame = {
-    inactive_titlebar_bg = '#121621',
-    active_titlebar_bg = '#121621',
+    inactive_titlebar_bg = '#1c1e26',
+    active_titlebar_bg = '#1c1e26',
   },
 }
