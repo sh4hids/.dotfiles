@@ -43,12 +43,12 @@ local on_attach = function(client, bufnr)
   buf_map(bufnr, 'i', '<C-x><C-x>', '<cmd> LspSignatureHelp<CR>')
 
   if client.server_capabilities.document_formatting then
-    vim.cmd([[
-            augroup LspFormatting
-                autocmd! * <buffer>
-                autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
-            augroup END
-        ]])
+    vim.api.nvim_create_autocmd('BufWritePre', {
+      buffer = bufnr,
+      callback = function()
+        vim.lsp.buf.format()
+      end,
+    })
   end
 end
 
