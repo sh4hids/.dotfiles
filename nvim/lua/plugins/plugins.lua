@@ -3,7 +3,11 @@ require('nvim-web-devicons').setup({
   default = true,
 })
 
--- require('bufferline').setup({})
+require('bufferline').setup({
+  options = {
+    always_show_bufferline = false,
+  },
+})
 
 require('gitsigns').setup({
   current_line_blame = true,

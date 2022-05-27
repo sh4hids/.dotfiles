@@ -5,10 +5,10 @@ local keymapOptions = { noremap = true }
 nvim_exec([[au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape']], false)
 nvim_exec([[au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock']], false)
 
-keymap('n', '<a-h>', '<C-w>h', keymapOptions)
-keymap('n', '<a-j>', '<c-w>j', keymapOptions)
-keymap('n', '<a-k>', '<c-w>k', keymapOptions)
-keymap('n', '<a-l>', '<C-w>l', keymapOptions)
+keymap('n', '<c-h>', '<C-w>h', keymapOptions)
+keymap('n', '<c-j>', '<c-w>j', keymapOptions)
+keymap('n', '<c-k>', '<c-w>k', keymapOptions)
+keymap('n', '<c-l>', '<C-w>l', keymapOptions)
 
 -- keymapOptions = {}
 keymapOptions = { noremap = true, silent = true }
@@ -23,6 +23,11 @@ keymap('n', '<Leader><space>', [[:nohlsearch<cr>]], keymapOptions)
 
 keymap('n', '<c-s>', ':w<CR>', keymapOptions)
 keymap('i', '<c-s>', '<Esc>:w<CR>a', keymapOptions)
+
+-- Better Tab Movement
+
+keymap('n', '<s-l>', ':BufferLineCycleNext<CR>', keymapOptions)
+keymap('n', '<s-h>', ':BufferLineCyclePrev<CR>', keymapOptions)
 
 keymapOptions = { noremap = true, silent = true }
 
