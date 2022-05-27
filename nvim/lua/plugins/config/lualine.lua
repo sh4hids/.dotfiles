@@ -15,7 +15,7 @@ lualine.setup({
     icons_enabled = true,
     component_separators = { '┊', '┊' },
     section_separators = { '▒', '▒' },
-    disabled_filetypes = { 'NvimTree' },
+    disabled_filetypes = { 'NvimTree', 'dashboard' },
   },
   sections = {
     lualine_a = { 'mode' },
