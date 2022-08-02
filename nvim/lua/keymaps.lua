@@ -4,6 +4,8 @@ local keymapOptions = { noremap = true }
 
 nvim_exec([[au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape']], false)
 nvim_exec([[au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock']], false)
+nvim_exec([[au BufWinLeave *.* mkview]], false)
+nvim_exec([[au BufWinEnter *.* silent loadview]], false)
 
 keymap('n', '<c-h>', '<C-w>h', keymapOptions)
 keymap('n', '<c-j>', '<c-w>j', keymapOptions)
