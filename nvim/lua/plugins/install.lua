@@ -73,7 +73,7 @@ return require('packer').startup(function()
   use('sh4hids/color-wheel.vim')
   use({
     'akinsho/toggleterm.nvim',
-    tag = 'v1.*',
+    tag = '*',
   })
 
   -- }}

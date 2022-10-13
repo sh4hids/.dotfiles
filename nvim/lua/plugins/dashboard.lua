@@ -1,29 +1,58 @@
-local plugins_count = vim.fn.len(vim.fn.globpath('~/.local/share/nvim/site/pack/packer/start', '*', 0, 1))
+local db = require('dashboard')
 vim.g.dashboard_disable_statusline = 1
 vim.g.dashboard_default_executive = 'telescope'
 
-local logo = {
-  [[]],
-  [[]],
-  [[███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
-  [[████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
-  [[██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
-  [[██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
-  [[██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
-  [[╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
-  [[]],
+local version = vim.version()
+local plugins_count = vim.fn.len(vim.fn.globpath('~/.local/share/nvim/site/pack/packer/start', '*', 0, 1))
+
+db.custom_header = {
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '██████  ██ ███████ ███    ███ ██ ██      ██       █████  ██   ██ ',
+  '██   ██ ██ ██      ████  ████ ██ ██      ██      ██   ██ ██   ██ ',
+  '██████  ██ ███████ ██ ████ ██ ██ ██      ██      ███████ ███████ ',
+  '██   ██ ██      ██ ██  ██  ██ ██ ██      ██      ██   ██ ██   ██ ',
+  '██████  ██ ███████ ██      ██ ██ ███████ ███████ ██   ██ ██   ██ ',
+  '                                                                 ',
+  '                                                                 ',
+  'N E O V I M - v' .. version.major .. '.' .. version.minor .. '.' .. version.patch,
+  '',
+  '',
 }
 
-vim.g.dashboard_custom_header = logo
-vim.g.dashboard_custom_section = {
-  a = { description = { '  Find File                 LDR ff' }, command = 'Telescope find_files' },
-  b = { description = { '  Recents                   LDR fo' }, command = 'Telescope oldfiles' },
-  c = { description = { '  Find Word                 LDR fw' }, command = 'Telescope live_grep' },
-  d = { description = { '  New File                  LDR fn' }, command = 'DashboardNewFile' },
-  e = { description = { '  Bookmarks                 LDR bm' }, command = 'Telescope marks' },
-  f = { description = { '  Load Last Session         LDR sl' }, command = 'SessionLoad' },
+db.hide_statusline = true
+db.hide_statusline = true
+db.footer_pad = 2
+db.custom_center = {
+  {
+    icon = '🔍 ',
+    desc = 'Find files          ',
+    shortcut = 'Leader ff',
+    action = 'Telescope find_files',
+  },
+  {
+    icon = '📄 ',
+    desc = 'New file            ',
+    shortcut = 'Leader fn',
+    action = 'DashboardNewFile',
+  },
+  {
+    icon = '🖥️ ',
+    desc = 'Find buffer         ',
+    shortcut = 'Leader fb',
+    action = 'Telescope buffers',
+  },
 }
 
-vim.g.dashboard_custom_footer = {
-  'NeoVim Loaded ' .. plugins_count .. ' plugins ',
+db.custom_footer = {
+  '🚀 loaded with ' .. plugins_count .. ' plugins',
+  '',
+  '',
+  '',
+  '',
+  '',
 }

@@ -37,6 +37,7 @@ keymap('n', 'ff', ':Telescope find_files<CR>', keymapOptions)
 keymap('n', 'fr', ':Telescope live_grep<CR>', keymapOptions)
 keymap('n', 'fb', ':Telescope buffers<CR>', keymapOptions)
 keymap('n', 'fh', ':Telescope help_tags<CR>', keymapOptions)
+keymap('n', 'fn', ':DashboardNewFile<CR>', keymapOptions)
 
 -- Better Selected Line Movement
 
