@@ -23,6 +23,23 @@ if os == 'Darwin' then
   font = nil
 end
 
+local keys = {
+  -- This will create a new split and run the `top` program inside it
+  {
+    key = '"',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitVertical({
+      domain = 'CurrentPaneDomain',
+      -- args = { 'top' },
+    }),
+  },
+  {
+    key = '%',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitHorizontal({ domain = 'CurrentPaneDomain' }),
+  },
+}
+
 return {
   font = font,
   use_fancy_tab_bar = false,
@@ -35,4 +52,5 @@ return {
     inactive_titlebar_bg = '#1c1e26',
     active_titlebar_bg = '#1c1e26',
   },
+  keys = keys,
 }
