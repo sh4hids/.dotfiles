@@ -39,6 +39,11 @@ keymap('n', 'fb', ':Telescope buffers<CR>', keymapOptions)
 keymap('n', 'fh', ':Telescope help_tags<CR>', keymapOptions)
 keymap('n', 'fn', ':DashboardNewFile<CR>', keymapOptions)
 
+keymap('', '<up>', '<nop>', keymapOptions)
+keymap('', '<down>', '<nop>', keymapOptions)
+keymap('', '<left>', '<nop>', keymapOptions)
+keymap('', '<right>', '<nop>', keymapOptions)
+
 -- Better Selected Line Movement
 
 keymapOptions = { silent = true }
