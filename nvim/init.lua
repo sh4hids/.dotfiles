@@ -1,5 +1,2 @@
-require 'globals'
-require 'options'
-require 'keymaps'
-require 'colors'
-require 'plugins'
+require("core")
+require("plugins")
