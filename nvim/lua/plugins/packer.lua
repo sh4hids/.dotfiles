@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'numToStr/Comment.nvim'
   use 'glepnir/dashboard-nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use {
     'williamboman/mason.nvim',
@@ -41,6 +42,11 @@ return require('packer').startup(function(use)
   use({
     'akinsho/toggleterm.nvim',
     tag = '*',
+  })
+
+  use({
+    'rrethy/vim-hexokinase',
+    run = 'cd ~/.local/share/nvim/site/pack/packer/start/vim-hexokinase && make hexokinase',
   })
 
   -- Automatically set up your configuration after cloning packer.nvim
