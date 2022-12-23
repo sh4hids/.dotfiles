@@ -20,6 +20,9 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
@@ -29,6 +32,11 @@ return require('packer').startup(function(use)
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'akinsho/bufferline.nvim'
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'onsails/lspkind-nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
   use {
     'williamboman/mason.nvim',
