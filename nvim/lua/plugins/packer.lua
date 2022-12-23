@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'akinsho/bufferline.nvim'
 
   use {
     'williamboman/mason.nvim',
