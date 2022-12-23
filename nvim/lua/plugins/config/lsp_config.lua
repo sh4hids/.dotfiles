@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "sumneko_lua" }
+  ensure_installed = { "sumneko_lua", "tsserver" }
 })
 
 local on_attach = function(_, _)
@@ -31,4 +31,9 @@ require("lspconfig").sumneko_lua.setup {
       },
     },
   }
+}
+
+require("lspconfig").tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
