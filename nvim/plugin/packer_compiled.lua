@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["color-wheel.vim"] = {
+    loaded = true,
+    path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/color-wheel.vim",
+    url = "https://github.com/sh4hids/color-wheel.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
