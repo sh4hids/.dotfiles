@@ -1,9 +1,9 @@
 local ensure_packer = function()
   local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
+    fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
+    vim.cmd([[packadd packer.nvim]])
     return true
   end
   return false
@@ -12,42 +12,43 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use 'sh4hids/color-wheel.vim'
-  use 'nvim-tree/nvim-tree.lua'
-  use 'nvim-tree/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-nvim-lua'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
-  use 'rafamadriz/friendly-snippets'
-  use 'windwp/nvim-autopairs'
-  use 'lewis6991/gitsigns.nvim'
-  use 'numToStr/Comment.nvim'
-  use 'glepnir/dashboard-nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'akinsho/bufferline.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'onsails/lspkind-nvim'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+  use('wbthomason/packer.nvim')
+  use('sh4hids/color-wheel.vim')
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
+  use('nvim-lualine/lualine.nvim')
+  use('nvim-treesitter/nvim-treesitter')
+  use('hrsh7th/nvim-cmp')
+  use('hrsh7th/cmp-nvim-lsp')
+  use('hrsh7th/cmp-nvim-lua')
+  use('hrsh7th/cmp-buffer')
+  use('hrsh7th/cmp-path')
+  use('L3MON4D3/LuaSnip')
+  use('saadparwaiz1/cmp_luasnip')
+  use('rafamadriz/friendly-snippets')
+  use('windwp/nvim-autopairs')
+  use('lewis6991/gitsigns.nvim')
+  use('numToStr/Comment.nvim')
+  use('glepnir/dashboard-nvim')
+  use('lukas-reineke/indent-blankline.nvim')
+  use('akinsho/bufferline.nvim')
+  use('nvim-lua/popup.nvim')
+  use('nvim-lua/plenary.nvim')
+  use('onsails/lspkind-nvim')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('jose-elias-alvarez/nvim-lsp-ts-utils')
+  use('matbme/JABS.nvim')
 
-  use {
+  use({
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
-  }
-  use {
+  })
+  use({
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
-    requires = {{ 'nvim-lua/plenary.nvim' }}
-  }
+    requires = { { 'nvim-lua/plenary.nvim' } },
+  })
   use({
     'akinsho/toggleterm.nvim',
     tag = '*',
