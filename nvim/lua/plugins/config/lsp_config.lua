@@ -4,7 +4,7 @@ require('mason').setup({
   },
 })
 require('mason-lspconfig').setup({
-  ensure_installed = { 'sumneko_lua', 'tsserver' },
+  ensure_installed = { 'sumneko_lua', 'tsserver', 'gopls' },
 })
 
 local status, null_ls = pcall(require, 'null-ls')
@@ -105,6 +105,25 @@ lspconfig.sumneko_lua.setup({
       },
     },
   },
+})
+
+lspconfig.gopls.setup({
+  cmd = { 'gopls' },
+  settings = {
+    gopls = {
+      experimentalPostfixCompletions = true,
+      analyses = {
+        unusedparams = true,
+        shadow = true,
+      },
+      staticcheck = true,
+    },
+  },
+  on_attach = function(client, bufnr)
+    client.server_capabilities.document_formatting = true
+    client.server_capabilities.document_range_formatting = true
+    on_attach(client, bufnr)
+  end,
 })
 
 null_ls.setup({
