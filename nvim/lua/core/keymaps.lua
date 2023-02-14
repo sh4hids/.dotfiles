@@ -3,6 +3,10 @@ local cmd = vim.cmd
 
 -- Highlight
 keymap('n', '<leader>h', ':nohlsearch<CR>')
+keymap('n', '<leader>n', ':enew<CR>')
+
+-- Plugins
+keymap('n', '<leader>u', ':PackerSync<CR>')
 
 -- Move between split windows
 keymap('n', '<c-h>', '<C-w>h')
@@ -11,12 +15,12 @@ keymap('n', '<c-k>', '<C-w>k')
 keymap('n', '<c-l>', '<C-w>l')
 
 -- Disable capslock
-cmd[[
+cmd([[
   au InsertEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' 
   au InsertLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
   au BufWinLeave *.* mkview
   au BufWinEnter *.* silent loadview
-]]
+]])
 
 -- Disable arrow keys
 keymap('', '<up>', '<nop>')

@@ -14,6 +14,18 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use('wbthomason/packer.nvim')
   use('sh4hids/color-wheel.vim')
+  use({
+    'olivercederborg/poimandres.nvim',
+    config = function()
+      require('poimandres').setup({
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+        disable_background = true,
+      })
+    end,
+  })
+
   use('nvim-tree/nvim-tree.lua')
   use('nvim-tree/nvim-web-devicons')
   use('nvim-lualine/lualine.nvim')
@@ -30,7 +42,6 @@ return require('packer').startup(function(use)
   use('lewis6991/gitsigns.nvim')
   use('tpope/vim-fugitive')
   use('numToStr/Comment.nvim')
-  use('glepnir/dashboard-nvim')
   use('lukas-reineke/indent-blankline.nvim')
   use('akinsho/bufferline.nvim')
   use('nvim-lua/popup.nvim')
@@ -39,6 +50,11 @@ return require('packer').startup(function(use)
   use('jose-elias-alvarez/null-ls.nvim')
   use('jose-elias-alvarez/nvim-lsp-ts-utils')
   use('matbme/JABS.nvim')
+
+  use({
+    'goolord/alpha-nvim',
+    -- requires = { 'nvim-tree/nvim-web-devicons' },
+  })
 
   use({
     'williamboman/mason.nvim',

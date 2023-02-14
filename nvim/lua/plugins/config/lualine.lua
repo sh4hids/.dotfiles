@@ -3,21 +3,21 @@ local function clock()
   return os.date('%I:%M %p', time)
 end
 
-require('lualine').setup {
+require('lualine').setup({
   options = {
-    theme = 'horizon',
+    -- theme = 'horizon',
     icons_enabled = true,
     component_separators = { '┊', '┊' },
     section_separators = { '▒', '▒' },
-    disabled_filetypes = { 'NvimTree', 'dashboard' },
+    disabled_filetypes = { 'NvimTree', 'dashboard', 'alpha' },
   },
   sections = {
     lualine_a = { 'mode' },
     lualine_b = { 'branch' },
     lualine_c = { {
-        'filename',
-        path = 1,
-      }, 'location' },
+      'filename',
+      path = 1,
+    }, 'location' },
     lualine_x = { 'encoding', 'fileformat', 'filetype' },
     lualine_y = { 'progress' },
     lualine_z = { clock },
@@ -32,4 +32,4 @@ require('lualine').setup {
   },
   tabline = {},
   extensions = {},
-}
+})

@@ -4,7 +4,7 @@ require('mason').setup({
   },
 })
 require('mason-lspconfig').setup({
-  ensure_installed = { 'sumneko_lua', 'tsserver', 'gopls' },
+  ensure_installed = { 'lua_ls', 'tsserver', 'gopls' },
 })
 
 local status, null_ls = pcall(require, 'null-ls')
@@ -75,7 +75,7 @@ lspconfig.tsserver.setup({
   end,
 })
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
   on_attach = function(client, bufnr)
     client.server_capabilities.document_formatting = true
     client.server_capabilities.document_range_formatting = true
