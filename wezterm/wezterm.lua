@@ -15,7 +15,7 @@ end
 
 local os = os.capture('uname')
 local font = wezterm.font_with_fallback({
-  'Fantasque Sans Mono',
+  'FantasqueSansMono Nerd Font',
   'FiraCode Nerd Font Mono',
 })
 
@@ -46,8 +46,8 @@ return {
   color_scheme = 'horizon',
   font_size = 20,
   window_background_opacity = 0.9,
-  text_background_opacity = 0.3,
-  startingDirectory = '.',
+  text_background_opacity = 0.8,
+  -- startingDirectory = '.',
   window_frame = {
     inactive_titlebar_bg = '#1c1e26',
     active_titlebar_bg = '#1c1e26',

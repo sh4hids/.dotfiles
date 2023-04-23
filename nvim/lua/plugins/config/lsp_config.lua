@@ -4,7 +4,7 @@ require('mason').setup({
   },
 })
 require('mason-lspconfig').setup({
-  ensure_installed = { 'lua_ls', 'tsserver', 'gopls' },
+  ensure_installed = { 'lua_ls', 'tsserver', 'gopls', 'prismals', 'tailwindcss' },
 })
 
 local status, null_ls = pcall(require, 'null-ls')
@@ -119,6 +119,22 @@ lspconfig.gopls.setup({
       staticcheck = true,
     },
   },
+  on_attach = function(client, bufnr)
+    client.server_capabilities.document_formatting = true
+    client.server_capabilities.document_range_formatting = true
+    on_attach(client, bufnr)
+  end,
+})
+
+lspconfig.prismals.setup({
+  on_attach = function(client, bufnr)
+    client.server_capabilities.document_formatting = true
+    client.server_capabilities.document_range_formatting = true
+    on_attach(client, bufnr)
+  end,
+})
+
+lspconfig.tailwindcss.setup({
   on_attach = function(client, bufnr)
     client.server_capabilities.document_formatting = true
     client.server_capabilities.document_range_formatting = true
