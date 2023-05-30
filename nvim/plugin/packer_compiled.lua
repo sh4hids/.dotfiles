@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/color-wheel.vim",
     url = "https://github.com/sh4hids/color-wheel.vim"
   },
+  ["everforest-nvim"] = {
+    loaded = true,
+    path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/everforest-nvim",
+    url = "https://github.com/neanias/everforest-nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -208,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/shahid/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,

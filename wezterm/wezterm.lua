@@ -30,7 +30,6 @@ local keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.SplitVertical({
       domain = 'CurrentPaneDomain',
-      -- args = { 'top' },
     }),
   },
   {
