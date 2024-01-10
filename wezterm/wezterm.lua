@@ -48,7 +48,7 @@ local get_background = function()
     },
     width = '100%',
     height = '100%',
-    opacity = 0.32,
+    opacity = 0.5,
   }
 end
 
@@ -76,7 +76,7 @@ return {
   font_size = 20,
   -- window_background_opacity = 0.9,
   macos_window_background_blur = 30,
-  text_background_opacity = 0.32,
+  text_background_opacity = 0.3,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',
