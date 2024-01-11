@@ -25,11 +25,11 @@ require("lazy").setup({
     -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
     lazy = false,
     -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
-    -- have outdated releases, which may break your Neovim install.
+    -- have outdated releases, which may breakyour Neovim install.
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "tokyonight" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
@@ -58,3 +58,5 @@ require("nvim-treesitter.configs").setup({
     enable = true,
   },
 })
+
+-- require("lazyvim.util").terminal(nil, { border = "single" })
