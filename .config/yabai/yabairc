@@ -1,0 +1,26 @@
+yabai -m config layout bsp
+
+yabai -m config window_placement second_child
+
+yabai -m config top_padding 32 
+yabai -m config bottom_padding 32 
+yabai -m config left_padding 32
+yabai -m config right_padding 32
+yabai -m config window_gap 16
+
+yabai -m config mouse_follows_focus on
+yabai -m config mouse_modifier alt
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+yabai -m mouse_drop_action swap
+
+# yabai -m signal --add event=window_created action='
+#  yabai -m query --windows --window $YABAI_WINDOW_ID | jq ".\"can-resize\" == false" || \
+#  yabai -m window $YABAI_WINDOW_ID --toggle float && \
+#  yabai -m window $YABAI_WINDOW_ID --layer above && \
+#  yabai -m window $YABAI_WINDOW_ID --grid 3:3:1:1:1:1
+# '
+
+yabai -m signal --add event=window_created action='
+  yabai -m query --windows --window $YABAI_WINDOW_ID | jq -er ".\"can-resize\" == false" && echo "Hello...${YABAI_WINDOW_ID}" > /tmp/yabai_shahid.out.log'
+

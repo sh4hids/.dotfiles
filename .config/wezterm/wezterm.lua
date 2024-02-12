@@ -54,7 +54,7 @@ end
 
 local get_wallpaper = function()
   return {
-    source = { File = { path = os.getenv('HOME') .. '/.dotfiles/wezterm/sakura.png' } },
+    source = { File = { path = os.getenv('HOME') .. '/.config/wezterm/sakura.png' } },
     height = 'Cover',
     width = 'Cover',
     horizontal_align = 'Left',
