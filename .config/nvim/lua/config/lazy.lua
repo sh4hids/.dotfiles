@@ -58,5 +58,3 @@ require("nvim-treesitter.configs").setup({
     enable = true,
   },
 })
-
--- require("lazyvim.util").terminal(nil, { border = "single" })

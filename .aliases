@@ -23,5 +23,4 @@ fi
 # others
 
 alias cl='clear'
-alias shp='cd hdd/dev/shopify/'
-alias p='cd hdd/personal/dev/'
+alias amag='cd $HOME/Desktop/Projects/AMAG'

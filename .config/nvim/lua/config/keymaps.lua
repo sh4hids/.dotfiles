@@ -12,3 +12,7 @@ vim.keymap.set("n", "<leader>ft", function()
   local Util = require("lazyvim.util")
   Util.terminal(nil, { border = "double", cwd = Util.root() })
 end, { desc = "Term with border" })
+
+vim.keymap.set("n", "<leader>rn", function()
+  return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true })
