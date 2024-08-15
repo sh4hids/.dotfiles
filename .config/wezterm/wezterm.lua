@@ -16,8 +16,8 @@ end
 local function get_font()
   local current_os = os.capture('uname')
   local font = wezterm.font_with_fallback({
-    'FantasqueSansMono Nerd Font',
-    'FiraCode Nerd Font Mono',
+    'FantasqueSansM Nerd Font',
+    'FiraCode Nerd Font',
   })
 
   if current_os == 'Darwin' then
@@ -101,7 +101,7 @@ return {
   color_scheme = color_scheme,
   font_size = 20,
   macos_window_background_blur = 30,
-  text_background_opacity = 0.3,
+  text_background_opacity = 0.5,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',

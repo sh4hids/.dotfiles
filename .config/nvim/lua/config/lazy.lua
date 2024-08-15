@@ -17,6 +17,8 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.go" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -49,7 +51,7 @@ require("lazy").setup({
 })
 
 require("nvim-treesitter.configs").setup({
-  ensure_installed = { "astro", "tsx", "typescript", "html" },
+  ensure_installed = { "astro", "tsx", "typescript", "html", "rust" },
   sync_install = false,
   ignore_install = {},
   modules = {},

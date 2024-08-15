@@ -16,3 +16,7 @@ end, { desc = "Term with border" })
 vim.keymap.set("n", "<leader>rn", function()
   return ":IncRename " .. vim.fn.expand("<cword>")
 end, { expr = true })
+
+vim.keymap.set("n", "<leader>bc", function()
+  return ":%bd|e#<cr>"
+end, { expr = true })

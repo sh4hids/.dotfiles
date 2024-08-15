@@ -3,3 +3,10 @@
 -- Add any additional options here
 vim.g.virtcolumn_char = "▕" -- char to display the line
 vim.g.virtcolumn_priority = 10 -- priority of extmark
+
+vim.o.textwidth = 0
+vim.o.wrapmargin = 0
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "79"

@@ -1,3 +1,5 @@
+local astro = require("lazyvim.plugins.extras.lang.astro")
+
 return {
   {
     "folke/noice.nvim",
@@ -10,12 +12,24 @@ return {
       })
 
       opts.presets.lsp_doc_border = true
+      opts.lsp.signature = {
+        auto_open = { enabled = false },
+      }
     end,
   },
   {
     "rcarriga/nvim-notify",
     opts = {
       timeout = 3000,
+    },
+  },
+  {
+    "echasnovski/mini.icons",
+    opts = {
+      extension = {
+
+        astro = { glyph = "", hl = "MiniIconsOrange" },
+      },
     },
   },
 }

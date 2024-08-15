@@ -24,3 +24,4 @@ fi
 
 alias cl='clear'
 alias amag='cd $HOME/Desktop/Projects/AMAG'
+alias sim='cd $HOME/Desktop/Projects/Personal'
