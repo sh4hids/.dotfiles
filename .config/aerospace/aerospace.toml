@@ -162,3 +162,7 @@ run = 'move-node-to-workspace T'
 [[on-window-detected]]
 if.app-id = 'com.usebruno.app'
 run = 'move-node-to-workspace A'
+
+[[on-window-detected]]
+if.app-id = 'org.videolan.vlc'
+run = ['layout floating', 'move-node-to-workspace V']
