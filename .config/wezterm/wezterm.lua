@@ -68,8 +68,8 @@ end
 
 local function get_background(mode)
   return {
-    get_wallpaper(mode),
-    get_background_color(mode),
+    -- get_wallpaper(mode),
+    -- get_background_color(mode),
   }
 end
 
@@ -89,7 +89,7 @@ local keys = {
 }
 
 local color_mode = 'dark'
-local color_scheme = 'horizon'
+local color_scheme = 'rose-pine'
 
 if color_mode == 'light' then
   color_scheme = 'dayfox'

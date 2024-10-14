@@ -6,7 +6,17 @@ return {
         tailwindcss = {
           settings = {
             tailwindCSS = {
-              classAttributes = { "class", "className", "class:list", "classList", "ngClass", ".*Classes.*" },
+              hovers = false,
+              suggestions = false,
+              classAttributes = {
+                "class",
+                "className",
+                "class:list",
+                "classList",
+                "ngClass",
+                ".*Classes.*",
+                "[\\s\\S]*Classes[\\s\\S]*",
+              },
               experimental = {
                 classRegex = {
                   -- tailwind-variants
@@ -34,7 +44,6 @@ return {
       user_default_options = {
         mode = "virtualtext",
         tailwind = true,
-        virtualtext = "⬢",
       },
     },
   },

@@ -102,6 +102,7 @@ alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
 alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
 alt-b = 'workspace B'
+alt-o = 'workspace O'
 alt-s = 'workspace S'
 alt-t = 'workspace T'
 alt-v = 'workspace V'
@@ -114,6 +115,7 @@ alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-a = 'move-node-to-workspace A'
 alt-shift-b = 'move-node-to-workspace B'
+alt-shift-o = 'move-node-to-workspace O'
 alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
 alt-shift-v = 'move-node-to-workspace V'
@@ -166,3 +168,7 @@ run = 'move-node-to-workspace A'
 [[on-window-detected]]
 if.app-id = 'org.videolan.vlc'
 run = ['layout floating', 'move-node-to-workspace V']
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace O'

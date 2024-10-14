@@ -1,5 +1,3 @@
-local astro = require("lazyvim.plugins.extras.lang.astro")
-
 return {
   {
     "folke/noice.nvim",
@@ -30,6 +28,12 @@ return {
 
         astro = { glyph = "", hl = "MiniIconsOrange" },
       },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false },
     },
   },
 }
