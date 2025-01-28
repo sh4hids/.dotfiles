@@ -179,3 +179,7 @@ run = ['layout floating', 'move-node-to-workspace V']
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
+
+[[on-window-detected]]
+if.app-id = 'com.musaeid.app'
+run = ['layout floating']

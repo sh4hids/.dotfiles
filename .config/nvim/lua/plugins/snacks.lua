@@ -13,6 +13,11 @@ return {
       quickfile = { enabled = true },
       statuscolumn = { enabled = true },
       words = { enabled = true },
+      terminal = {
+        win = {
+          position = "float",
+        },
+      },
       styles = {
         notification = {
           wo = { wrap = true }, -- Wrap notifications

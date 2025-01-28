@@ -1,13 +1,12 @@
 return {
-  -- { "ellisonleao/gruvbox.nvim" },
-  { "rose-pine/neovim", name = "rose-pine" },
-  -- { "EdenEast/nightfox.nvim" },
+  -- { "rose-pine/neovim", name = "rose-pine" },
+  { "rose-pine/neovim", name = "rose-pine-dawn" },
 
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      -- colorscheme = "rose-pine",
+      colorscheme = "rose-pine-dawn",
     },
   },
 }

@@ -1,4 +1,12 @@
 local wezterm = require('wezterm')
+local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
+
+-- local color_mode = 'dark'
+local color_mode = 'light'
+
+if color_mode == 'dark' then
+  theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
+end
 
 function os.capture(cmd, raw)
   local f = assert(io.popen(cmd, 'r'))
@@ -28,12 +36,11 @@ local function get_font()
 end
 
 local get_background_color = function(mode)
-  local colors = { '#ffffff' }
-  local opacity = 0.8
+  local colors = { '#faf4ed' }
+  local opacity = 0.5
 
   if mode == 'dark' then
-    colors = { '#000000' }
-    opacity = 0.5
+    colors = { '#232136' }
   end
 
   return {
@@ -62,14 +69,14 @@ local get_wallpaper = function(mode)
     horizontal_align = 'Left',
     repeat_x = 'Repeat',
     repeat_y = 'Repeat',
-    opacity = 1,
+    opacity = 0.9,
   }
 end
 
 local function get_background(mode)
   return {
-    -- get_wallpaper(mode),
-    -- get_background_color(mode),
+    get_wallpaper(mode),
+    get_background_color(mode),
   }
 end
 
@@ -88,17 +95,10 @@ local keys = {
   },
 }
 
-local color_mode = 'dark'
-local color_scheme = 'rose-pine'
-
-if color_mode == 'light' then
-  color_scheme = 'dayfox'
-end
-
 return {
   font = get_font(),
+  colors = theme.colors(),
   use_fancy_tab_bar = false,
-  color_scheme = color_scheme,
   font_size = 20,
   macos_window_background_blur = 30,
   text_background_opacity = 0.5,
