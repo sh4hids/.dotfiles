@@ -1,8 +1,8 @@
 local wezterm = require('wezterm')
 local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
 
--- local color_mode = 'dark'
-local color_mode = 'light'
+local color_mode = 'dark'
+-- local color_mode = 'light'
 
 if color_mode == 'dark' then
   theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main

@@ -107,6 +107,7 @@ alt-o = 'workspace O'
 alt-s = 'workspace S'
 alt-t = 'workspace T'
 alt-v = 'workspace V'
+alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -121,6 +122,7 @@ alt-shift-o = 'move-node-to-workspace O'
 alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
 alt-shift-v = 'move-node-to-workspace V'
+alt-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -158,15 +160,19 @@ run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-run = 'move-node-to-workspace T'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'com.usebruno.app'
@@ -183,3 +189,8 @@ run = 'move-node-to-workspace O'
 [[on-window-detected]]
 if.app-id = 'com.musaeid.app'
 run = ['layout floating']
+
+
+[[on-window-detected]]
+if.app-id = 'us.zoom.xos'
+run = ['layout floating', 'move-node-to-workspace Z']
