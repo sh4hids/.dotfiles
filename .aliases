@@ -1,6 +1,8 @@
 # git
 
 alias gpd='git pull origin develop'
+alias gpms='git pull origin master'
+alias gpmn='git pull origin main'
 
 
 # editor
