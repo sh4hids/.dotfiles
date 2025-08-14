@@ -13,3 +13,4 @@ vim.opt.linebreak = true
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "79"
 vim.opt.clipboard = ""
+vim.opt.foldmethod = "manual"

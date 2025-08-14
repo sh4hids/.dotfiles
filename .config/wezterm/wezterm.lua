@@ -37,7 +37,7 @@ end
 
 local get_background_color = function(mode)
   local colors = { '#faf4ed' }
-  local opacity = 0.5
+  local opacity = 0.6
 
   if mode == 'dark' then
     colors = { '#232136' }
@@ -75,7 +75,7 @@ end
 
 local function get_background(mode)
   return {
-    get_wallpaper(mode),
+    -- get_wallpaper(mode),
     get_background_color(mode),
   }
 end
@@ -100,8 +100,8 @@ return {
   colors = theme.colors(),
   use_fancy_tab_bar = false,
   font_size = 20,
-  macos_window_background_blur = 30,
-  text_background_opacity = 0.5,
+  macos_window_background_blur = 20,
+  text_background_opacity = 0.6,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',
