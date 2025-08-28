@@ -1,6 +1,11 @@
 after-login-command = []
 
-after-startup-command = []
+after-startup-command = [
+  'exec-and-forget borders active_color=0xff818cf8 inactive_color=0xff494d64 width=5.0',
+]
+
+exec-on-workspace-change = ['/bin/bash', '-c', '~/.config/aerospace/musaeid.sh']
+
 
 # Start AeroSpace at login
 start-at-login = true
@@ -12,7 +17,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 0
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -149,7 +154,6 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace M'
@@ -186,10 +190,9 @@ run = ['layout floating', 'move-node-to-workspace V']
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
 
-[[on-window-detected]]
-if.app-id = 'com.musaeid.app'
-run = ['layout floating']
-
+# [[on-window-detected]]
+# if.app-id = 'com.musaeid.app'
+# run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'us.zoom.xos'
