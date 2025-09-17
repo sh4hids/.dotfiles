@@ -37,7 +37,7 @@ end
 
 local get_background_color = function(mode)
   local colors = { '#faf4ed' }
-  local opacity = 0.6
+  local opacity = 0
 
   if mode == 'dark' then
     colors = { '#232136' }
@@ -101,7 +101,7 @@ return {
   use_fancy_tab_bar = false,
   font_size = 20,
   macos_window_background_blur = 20,
-  text_background_opacity = 0.6,
+  text_background_opacity = 0.01,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',

@@ -4,7 +4,11 @@ after-startup-command = [
   'exec-and-forget borders active_color=0xff818cf8 inactive_color=0xff494d64 width=5.0',
 ]
 
-exec-on-workspace-change = ['/bin/bash', '-c', '~/.config/aerospace/musaeid.sh']
+exec-on-workspace-change = [
+  '/bin/bash',
+  '-c',
+  '~/.config/aerospace/focus-window.sh',
+]
 
 
 # Start AeroSpace at login
