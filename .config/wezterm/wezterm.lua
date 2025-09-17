@@ -2,7 +2,6 @@ local wezterm = require('wezterm')
 local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
 
 local color_mode = 'dark'
--- local color_mode = 'light'
 
 if color_mode == 'dark' then
   theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
@@ -37,7 +36,7 @@ end
 
 local get_background_color = function(mode)
   local colors = { '#faf4ed' }
-  local opacity = 0
+  local opacity = 0.01
 
   if mode == 'dark' then
     colors = { '#232136' }
@@ -52,24 +51,6 @@ local get_background_color = function(mode)
     width = '100%',
     height = '100%',
     opacity = opacity,
-  }
-end
-
-local get_wallpaper = function(mode)
-  local image_path = '/.config/wezterm/bloom.png'
-
-  if mode == 'dark' then
-    image_path = '/.config/wezterm/sakura.png'
-  end
-
-  return {
-    source = { File = { path = os.getenv('HOME') .. image_path } },
-    height = 'Cover',
-    width = 'Cover',
-    horizontal_align = 'Left',
-    repeat_x = 'Repeat',
-    repeat_y = 'Repeat',
-    opacity = 0.9,
   }
 end
 
@@ -100,8 +81,8 @@ return {
   colors = theme.colors(),
   use_fancy_tab_bar = false,
   font_size = 20,
-  macos_window_background_blur = 20,
-  text_background_opacity = 0.01,
+  macos_window_background_blur = 16,
+  text_background_opacity = 1,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',
