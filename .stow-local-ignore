@@ -13,6 +13,7 @@ _darcs
 
 \.git
 \.gitignore
+\.stow-local-ignore
 
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
@@ -22,4 +23,3 @@ _darcs
 ^/COPYING
 scripts
 stylua.toml
-zsh

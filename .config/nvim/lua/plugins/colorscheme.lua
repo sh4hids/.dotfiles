@@ -12,13 +12,4 @@ return {
       vim.cmd("colorscheme rose-pine")
     end,
   },
-  -- { "rose-pine/neovim", name = "rose-pine-dawn" },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "rose-pine",
-      -- colorscheme = "rose-pine-dawn",
-    },
-  },
 }

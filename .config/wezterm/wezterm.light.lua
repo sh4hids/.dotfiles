@@ -1,5 +1,5 @@
 local wezterm = require('wezterm')
-local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
+local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
 
 function os.capture(cmd, raw)
   local f = assert(io.popen(cmd, 'r'))
@@ -29,8 +29,8 @@ local function get_font()
 end
 
 local get_background_color = function()
-  local colors = { '#232136' }
-  local opacity = 0.01
+  local colors = { '#faf4ed' }
+  local opacity = 0.90
 
   return {
     source = {
