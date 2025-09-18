@@ -22,4 +22,5 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 scripts
+assets
 stylua.toml

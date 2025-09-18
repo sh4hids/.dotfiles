@@ -28,3 +28,6 @@ alias cl='clear'
 alias p='pnpm'
 alias amag='cd $HOME/Desktop/Projects/AMAG'
 alias sim='cd $HOME/Desktop/Projects/Personal'
+
+alias light='~/.dotfiles/scripts/theme.sh light'
+alias dark='~/.dotfiles/scripts/theme.sh dark'
