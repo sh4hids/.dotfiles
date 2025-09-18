@@ -70,7 +70,7 @@ return {
   colors = theme.colors(),
   use_fancy_tab_bar = false,
   font_size = 20,
-  macos_window_background_blur = 16,
+  macos_window_background_blur = 32,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',

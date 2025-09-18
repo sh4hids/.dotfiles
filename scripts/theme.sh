@@ -15,12 +15,12 @@ theme_lower=$(echo "$theme" | tr '[:upper:]' '[:lower:]')
 # Check the value of the argument
 if [ "$theme_lower" = "light" ]; then
   cp ~/.config/wezterm/wezterm.light.lua ~/.config/wezterm/wezterm.lua
-  cp ~/.config/nvim/themes/light.lua ~/.config/nvim/lua/plugins/colorscheme.lua
+  cp ~/.dorfiles/scripts/assets/nvim/themes/light.lua ~/.config/nvim/lua/plugins/colorscheme.lua
   echo "Theme set to Light."
   # Add commands for the light theme here
 elif [ "$theme_lower" = "dark" ]; then
   cp ~/.config/wezterm/wezterm.dark.lua ~/.config/wezterm/wezterm.lua
-  cp ~/.config/nvim/themes/dark.lua ~/.config/nvim/lua/plugins/colorscheme.lua
+  cp ~/.dorfiles/scripts/assets/nvim/themes/dark.lua ~/.config/nvim/lua/plugins/colorscheme.lua
   echo "Theme set to Dark."
   # Add commands for the dark theme here
 else
