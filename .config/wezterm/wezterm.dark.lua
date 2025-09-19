@@ -30,7 +30,7 @@ end
 
 local get_background_color = function()
   local colors = { '#232136' }
-  local opacity = 0.01
+  local opacity = 0.80
 
   return {
     source = {
@@ -70,7 +70,7 @@ return {
   colors = theme.colors(),
   use_fancy_tab_bar = false,
   font_size = 20,
-  macos_window_background_blur = 32,
+  macos_window_background_blur = 40,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',

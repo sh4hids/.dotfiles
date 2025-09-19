@@ -82,3 +82,4 @@ export PATH="$HOME/tools/lua-language-server/bin/Linux:$PATH"
 export GPG_TTY=$(tty)
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 alias python=/usr/bin/python3
+
