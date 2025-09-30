@@ -1,5 +1,5 @@
 local wezterm = require('wezterm')
-local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
+local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 
 function os.capture(cmd, raw)
   local f = assert(io.popen(cmd, 'r'))
@@ -29,8 +29,8 @@ local function get_font()
 end
 
 local get_background_color = function()
-  local colors = { '#faf4ed' }
-  local opacity = 0.90
+  local colors = { '#232136' }
+  local opacity = 0.80
 
   return {
     source = {
@@ -70,7 +70,7 @@ return {
   colors = theme.colors(),
   use_fancy_tab_bar = false,
   font_size = 20,
-  macos_window_background_blur = 16,
+  macos_window_background_blur = 40,
   window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
   window_frame = {
     inactive_titlebar_bg = '#1e1e26',
