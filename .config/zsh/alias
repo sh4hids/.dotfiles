@@ -26,7 +26,7 @@ fi
 
 alias cl='clear'
 alias p='pnpm'
-alias amag='cd $HOME/Desktop/Projects/AMAG'
+alias tso='cd $HOME/Desktop/Projects/TSO'
 alias sim='cd $HOME/Desktop/Projects/Personal'
 
 alias light='~/.dotfiles/scripts/theme.sh light'

@@ -83,3 +83,6 @@ export GPG_TTY=$(tty)
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 alias python=/usr/bin/python3
 
+
+# Created by `pipx` on 2025-11-27 04:03:55
+export PATH="$PATH:/Users/shahid/.local/bin"
