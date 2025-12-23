@@ -1,0 +1,33 @@
+# git
+
+alias gpd='git pull origin develop'
+alias gpms='git pull origin master'
+alias gpmn='git pull origin main'
+
+
+# editor
+
+if type atom > /dev/null 2>&1; then
+  alias a='atom'
+fi
+
+if type code > /dev/null 2>&1; then
+  alias c='code'
+fi
+
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+  alias vi='nvim'
+  alias v='nvim'
+fi
+
+
+# others
+
+alias cl='clear'
+alias p='pnpm'
+alias tso='cd $HOME/Desktop/Projects/TSO'
+alias sim='cd $HOME/Desktop/Projects/Personal'
+
+alias light='~/.dotfiles/scripts/theme.sh light'
+alias dark='~/.dotfiles/scripts/theme.sh dark'

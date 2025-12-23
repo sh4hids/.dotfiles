@@ -1,5 +1,0 @@
-require 'globals'
-require 'options'
-require 'keymaps'
-require 'colors'
-require 'plugins'

@@ -1,0 +1,74 @@
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# swap windows
+ctrl + shift + alt - j : yabai -m window --swap south
+ctrl + shift + alt - k : yabai -m window --swap north
+ctrl + shift + alt - h : yabai -m window --swap west
+ctrl + shift + alt - l : yabai -m window --swap east
+
+#change focus between external displays (left and right)
+ctrl + alt - x: yabai -m display --focus west
+ctrl + alt - m: yabai -m display --focus east
+
+# move window to display left and right
+shift + alt - x : yabai -m window --display west; yabai -m display --focus west;
+shift + alt - m : yabai -m window --display east; yabai -m display --focus east;
+
+#move window to prev and next space
+shift + alt - p : yabai -m window --space prev;
+shift + alt - n : yabai -m window --space next;
+
+# move window to space #
+shift + alt - 1 : yabai -m window --space 1;
+shift + alt - 2 : yabai -m window --space 2;
+shift + alt - 3 : yabai -m window --space 3;
+shift + alt - 4 : yabai -m window --space 4;
+shift + alt - 5 : yabai -m window --space 5;
+shift + alt - 6 : yabai -m window --space 6;
+shift + alt - 7 : yabai -m window --space 7;
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+# toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# toggle window native fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
+
+# toggle window fullscreen zoom
+# alt - f : yabai -m window --toggle zoom-fullscreen
+
+# 3 column layout
+alt - t : yabai -m space --layout bsp;\
+    yabai -m space --mirror y-axis;\
+    yabai -m window --focus largest;\
+    yabai -m window --insert east;\
+    yabai -m window --focus next;\
+    yabai -m window --focus next;\
+    yabai -m window --warp largest;\
+    yabai -m window --resize left:-200:0; \
+    yabai -m window --resize right:500:0; \
+
+alt - f : yabai -m config layout stack;\
+yabai -m config --space 3 layout stack;\
+yabai -m space --layout stack;\
+yabai -m window --focus stack.first;\
+yabai -m window --focus stack.prev;\
+yabai -m window --focus stack.next;\
+yabai -m window --focus stack.recent;\
+yabai -m window --focus stack.last;\
+
+# stop/start/restart yabai
+ctrl + alt - s : yabai --start-service
+ctrl + alt - r : yabai --restart-service
+ctrl + alt - q : yabai --stop-service
