@@ -6,6 +6,11 @@ return {
         win = {
           position = "float",
           border = "rounded",
+          winblend = 0,
+          highlights = {
+            border = "FloatBorder",
+            background = "Transparent",
+          },
         },
       },
     },
