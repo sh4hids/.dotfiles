@@ -11,11 +11,9 @@ config.enable_scroll_bar = false
 config.window_padding = {
   left = 0,
   right = 0,
-  top = 10,
+  top = 20,
   bottom = 0,
 }
-config.window_background_opacity = 0.9
-config.macos_window_background_blur = 20
-config.text_background_opacity = 0.6
+config.font = wezterm.font('RecMonoSmCasual Nerd Font')
 
 return config
