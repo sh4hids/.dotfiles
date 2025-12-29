@@ -1,81 +1,21 @@
 local wezterm = require('wezterm')
-local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 
-function os.capture(cmd, raw)
-  local f = assert(io.popen(cmd, 'r'))
-  local s = assert(f:read('*a'))
-  f:close()
-  if raw then
-    return s
-  end
-  s = string.gsub(s, '^%s+', '')
-  s = string.gsub(s, '%s+$', '')
-  s = string.gsub(s, '[\n\r]+', ' ')
-  return s
-end
+local config = wezterm.config_builder()
 
-local function get_font()
-  local current_os = os.capture('uname')
-  local font = wezterm.font_with_fallback({
-    'FantasqueSansM Nerd Font',
-    'FiraCode Nerd Font',
-  })
-
-  if current_os == 'Darwin' then
-    font = nil
-  end
-
-  return font
-end
-
-local get_background_color = function()
-  local colors = { '#232136' }
-  local opacity = 0.80
-
-  return {
-    source = {
-      Gradient = {
-        colors = colors,
-      },
-    },
-    width = '100%',
-    height = '100%',
-    opacity = opacity,
-  }
-end
-
-local function get_background()
-  return {
-    get_background_color(),
-  }
-end
-
-local keys = {
-  {
-    key = '"',
-    mods = 'CTRL|SHIFT',
-    action = wezterm.action.SplitVertical({
-      domain = 'CurrentPaneDomain',
-    }),
-  },
-  {
-    key = '%',
-    mods = 'CTRL|SHIFT',
-    action = wezterm.action.SplitHorizontal({ domain = 'CurrentPaneDomain' }),
-  },
+config.font_size = 20
+config.color_scheme = 'zenbones'
+config.use_fancy_tab_bar = false
+config.hide_tab_bar_if_only_one_tab = true
+config.window_decorations = 'INTEGRATED_BUTTONS | RESIZE'
+config.enable_scroll_bar = false
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 10,
+  bottom = 0,
 }
+config.window_background_opacity = 0.9
+config.macos_window_background_blur = 20
+config.text_background_opacity = 0.6
 
-return {
-  font = get_font(),
-  colors = theme.colors(),
-  use_fancy_tab_bar = false,
-  font_size = 20,
-  macos_window_background_blur = 40,
-  window_decorations = 'INTEGRATED_BUTTONS | RESIZE',
-  window_frame = {
-    inactive_titlebar_bg = '#1e1e26',
-    active_titlebar_bg = '#1e1e1e',
-  },
-  keys = keys,
-  background = get_background(),
-}
+return config

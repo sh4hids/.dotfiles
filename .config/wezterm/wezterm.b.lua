@@ -1,5 +1,5 @@
 local wezterm = require('wezterm')
-local theme = '~/.config/wezterm/colors/zenbones.toml'
+-- local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 
 function os.capture(cmd, raw)
   local f = assert(io.popen(cmd, 'r'))
@@ -67,7 +67,7 @@ local keys = {
 
 return {
   font = get_font(),
-  colors = theme.colors(),
+  colors_schemes = 'zenbones',
   use_fancy_tab_bar = false,
   font_size = 20,
   macos_window_background_blur = 40,
