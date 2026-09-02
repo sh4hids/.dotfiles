@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.user.darknotify</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <!--
+      Path to dark-notify. Homebrew installs to a different
+      location depending on your Mac:
+        Apple Silicon: /opt/homebrew/bin/dark-notify
+        Intel:         /usr/local/bin/dark-notify
+      Run `which dark-notify` in Terminal to confirm yours,
+      then edit the string below if it doesn't match.
+    -->
+    <string>/opt/homebrew/bin/dark-notify</string>
+    <string>-c</string>
+    <string>/Users/YOUR_USERNAME/.dotfiles/scripts/toggle-wallpaper.sh</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/dark-notify.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/dark-notify.error.log</string>
+</dict>
+</plist>
+

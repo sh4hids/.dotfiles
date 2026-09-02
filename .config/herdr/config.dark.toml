@@ -1,0 +1,28 @@
+onboarding = false
+
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+accent = "#7EB3C9"
+panel_bg = "#1F1F28"
+sidebar_bg = "#1F1F28"
+active_row_bg = "#49473E"
+selection_bg = "#49473E"
+surface0 = "#3C3C51"
+surface1 = "#49473E"
+surface_dim = "#1F1F28"
+overlay0 = "#3C3C51"
+overlay1 = "#A8A48D"
+text = "#DDD8BB"
+subtext0 = "#A8A48D"
+mauve = "#957FB8"
+green = "#98BC6D"
+yellow = "#E5C283"
+red = "#E46A78"
+blue = "#7EB3C9"
+teal = "#7EB3C9"
+peach = "#F1C982"
+
+[keys]
+prefix = "ctrl+space"

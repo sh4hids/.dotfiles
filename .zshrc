@@ -86,3 +86,6 @@ alias python=/usr/bin/python3
 
 # Created by `pipx` on 2025-11-27 04:03:55
 export PATH="$PATH:/Users/shahid/.local/bin"
+source "${HOME}/.ids"
+
+export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"

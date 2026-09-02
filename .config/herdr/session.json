@@ -1,0 +1,200 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w4",
+      "custom_name": "tso",
+      "identity_cwd": "/Users/shahid/Desktop/Projects/TSO/web-core",
+      "public_pane_numbers": {
+        "1": 1,
+        "4": 7,
+        "3": 3,
+        "2": 5,
+        "12": 9
+      },
+      "next_public_pane_number": 10,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": "web",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 2
+                  },
+                  "second": {
+                    "Pane": 12
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "1": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/web-core"
+            },
+            "12": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/web-safety"
+            },
+            "2": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/web-identity"
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "api",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 3
+              },
+              "second": {
+                "Pane": 4
+              }
+            }
+          },
+          "panes": {
+            "3": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/api-ops"
+            },
+            "4": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/api-ops"
+            }
+          },
+          "zoomed": false,
+          "focused": 3,
+          "root_pane": 3
+        }
+      ],
+      "active_tab": 1
+    },
+    {
+      "id": "w5",
+      "custom_name": "sim",
+      "identity_cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft",
+      "public_pane_numbers": {
+        "9": 5,
+        "7": 1,
+        "8": 4,
+        "10": 6
+      },
+      "next_public_pane_number": 7,
+      "public_tab_numbers": [
+        1,
+        2,
+        3
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": "editor",
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        },
+        {
+          "custom_name": "playground",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 8
+              },
+              "second": {
+                "Pane": 9
+              }
+            }
+          },
+          "panes": {
+            "8": {
+              "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
+            },
+            "9": {
+              "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 8
+        },
+        {
+          "custom_name": "ai",
+          "layout": {
+            "Pane": 10
+          },
+          "panes": {
+            "10": {
+              "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 10
+        }
+      ],
+      "active_tab": 1
+    },
+    {
+      "id": "w6",
+      "custom_name": "misc",
+      "identity_cwd": "/Users/shahid",
+      "public_pane_numbers": {
+        "11": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 11
+          },
+          "panes": {
+            "11": {
+              "cwd": "/Users/shahid"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 11
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 2,
+  "selected": 2,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

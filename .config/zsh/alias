@@ -31,3 +31,5 @@ alias sim='cd $HOME/Desktop/Projects/Personal'
 
 alias light='~/.dotfiles/scripts/theme.sh light'
 alias dark='~/.dotfiles/scripts/theme.sh dark'
+alias ls='eza'
+alias pg='docker compose -f $HOME/Desktop/Projects/Personal/docker/docker-compose.postgres.yml'
