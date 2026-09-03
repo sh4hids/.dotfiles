@@ -6,11 +6,11 @@
       "custom_name": "tso",
       "identity_cwd": "/Users/shahid/Desktop/Projects/TSO/web-core",
       "public_pane_numbers": {
-        "1": 1,
         "4": 7,
-        "3": 3,
         "2": 5,
-        "12": 9
+        "12": 9,
+        "1": 1,
+        "3": 3
       },
       "next_public_pane_number": 10,
       "public_tab_numbers": [
@@ -43,18 +43,18 @@
             }
           },
           "panes": {
-            "1": {
-              "cwd": "/Users/shahid/Desktop/Projects/TSO/web-core"
-            },
             "12": {
               "cwd": "/Users/shahid/Desktop/Projects/TSO/web-safety"
             },
             "2": {
               "cwd": "/Users/shahid/Desktop/Projects/TSO/web-identity"
+            },
+            "1": {
+              "cwd": "/Users/shahid/Desktop/Projects/TSO/web-core"
             }
           },
           "zoomed": false,
-          "focused": 1,
+          "focused": 12,
           "root_pane": 1
         },
         {
@@ -72,10 +72,10 @@
             }
           },
           "panes": {
-            "3": {
+            "4": {
               "cwd": "/Users/shahid/Desktop/Projects/TSO/api-ops"
             },
-            "4": {
+            "3": {
               "cwd": "/Users/shahid/Desktop/Projects/TSO/api-ops"
             }
           },
@@ -91,10 +91,10 @@
       "custom_name": "sim",
       "identity_cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft",
       "public_pane_numbers": {
-        "9": 5,
-        "7": 1,
         "8": 4,
-        "10": 6
+        "7": 1,
+        "10": 6,
+        "9": 5
       },
       "next_public_pane_number": 7,
       "public_tab_numbers": [
@@ -133,10 +133,10 @@
             }
           },
           "panes": {
-            "8": {
+            "9": {
               "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
             },
-            "9": {
+            "8": {
               "cwd": "/Users/shahid/Desktop/Projects/Personal/projects/deltacroft"
             }
           },
